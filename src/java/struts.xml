@@ -14,7 +14,7 @@
         </action>
         
         <action name="registerEvent" class="com.fpt.model.RegisterModel">
-            <result name="success">listStudent</result>
+            <result name="success" type="redirect">listStudent</result>
         </action>
     </package>
 </struts>

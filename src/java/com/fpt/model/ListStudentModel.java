@@ -22,6 +22,14 @@ public class ListStudentModel extends ActionSupport{
         students = new StudentManager().getStudents();
         return SUCCESS;
     }
+
+    public List<Student> getStudents() {
+        return students;
+    }
+
+    public void setStudents(List<Student> students) {
+        this.students = students;
+    }
     
     
 }

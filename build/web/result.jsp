@@ -12,8 +12,18 @@
         <title>List student registered</title>
     </head>
     <body>
-        <h1>List student!</h1>
-        <table>
+        <h1>List student registered Halloween event!</h1>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>Roll Number</th>
+                    <th>Name</th>
+                    <th>Class</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
             <s:iterator value="students" var="student">
                 <tr>
                     <td><s:property value="id"/></td>
@@ -23,6 +33,7 @@
                     <td><s:property value="email"/></td>
                 </tr>
             </s:iterator>
+                </tbody>
                 <a href="index.jsp">Back</a>
         </table>
     </body>
